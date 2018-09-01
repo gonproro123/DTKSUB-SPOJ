@@ -12,12 +12,13 @@ const int base = 97;
 const int SIZE= 5 * 1e5 +5;
 
 typedef unsigned long long ull;
+//-------------------
 
 int n,k;
 ull Hash[SIZE],pow[SIZE];
 ull a[SIZE];
 string S;
-void init()
+void Init()
 {
     pow[0] = 1;
     for(int i = 1; i <= n; i++)
@@ -83,7 +84,7 @@ int main()
     cin >> n >> k;
     cin >> S;
     S = " " + S;
-    init();
+    Init();
     solve();
     return 0;
 }
